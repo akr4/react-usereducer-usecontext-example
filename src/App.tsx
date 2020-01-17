@@ -34,7 +34,7 @@ const Button: React.FC<{ onClick: () => void }> = React.memo(props => {
   );
 });
 
-// コンテキスト経由で状態とreducerを受け取る
+// コンテキスト経由で状態とdispatchを受け取る
 const ContextCounterC: React.FC = React.memo(() => {
   console.log("ContextCounterC");
   const { counter, dispatch } = useContext(CounterContextC);
